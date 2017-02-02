@@ -1,0 +1,69 @@
+html, body {
+	border: 2px dashed purple;
+	height: 100%;
+/*	margin-bottom: -50px;*/
+}
+
+div {
+/*	height: 100%;*//*WILL INCREASE HEIGHT FOR ALL NESTED ELEMENTS*/
+}
+
+.jumbotron {
+	background-color: beige;
+}
+
+.top {
+	background-color: orange;
+/*	column-width: auto !important;*/
+}
+
+.middle {
+	background-color: yellow;
+}
+
+.bottom {
+	background-color: purple;
+}
+
+.col-sm-4 {
+/*	width: 100%;*/
+	border: 1px dashed red;
+	height: 100%;
+}
+
+.row {
+/*	width: auto !important;
+	margin: auto !important;*/
+/*	display: table-row;*/
+	height: 100%;/*NEEDED TO DISPLAY FULL HEIGHT 
+				(ALSO, NEEDED FOR .CONTAINER IN CONJUNCTION)*/
+}
+
+.container-fluid {/*NEEDS TO BE CONTAINER FLUID TO BE FULL-WIDTH*/
+	border: 2px dotted blue;
+	margin-top: -30px;/*NEED TO BE NEGATIVE MARGIN, OTHERWISE, THERE 
+						IS A GAP BTWN JUMBOTRON & CONTAINER*/
+	display: table;/*NEEDED TO DISPLAY FULL HEIGHT*/					
+	height: 100%;/*NEEDED TO DISPLAY FULL HEIGHT
+				(ALSO, NEEDED FOR .ROW IN CONJUNCTION)*/
+/*	margin-bottom: -30px;*/					
+/*	margin-left: 0px !important;
+	margin-right: -20px !important;*/
+}
+
+.blue {
+	background-color: green;
+}
+
+h2::after {
+	content: "content using ::after Selector";
+	color: grey;
+	font-size: 12px;
+}
+
+h3::before {
+	content: 'content using ::before Selector';
+	color: blue;
+	font-size: 10px;
+}
+
